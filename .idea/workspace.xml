@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71aa5126-e212-4b5c-81d8-7cb2cbb8d8e1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="First" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/First-Project" />
+  </component>
+  <component name="ProjectId" id="1ZYKv7ZtGm3hquS0GA5jDVV3Cs0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\seung\IdeaProjects\First\src\main\resources\templates.test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FirstApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.FirstApplication" />
+      <module name="First.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FirstApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71aa5126-e212-4b5c-81d8-7cb2cbb8d8e1" name="Default Changelist" comment="" />
+      <created>1585010814060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585010814060</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585102825998">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="555" y="235" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1585102825998" />
+    <state x="580" y="187" key="FileChooserDialogImpl" timestamp="1585644111206">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="580" y="187" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585644111206" />
+    <state width="1431" height="153" key="GridCell.Tab.0.bottom" timestamp="1585291245633">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="153" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1585291245633" />
+    <state width="1431" height="153" key="GridCell.Tab.0.center" timestamp="1585291245633">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="153" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1585291245633" />
+    <state width="1431" height="153" key="GridCell.Tab.0.left" timestamp="1585291245633">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="153" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1585291245633" />
+    <state width="1431" height="153" key="GridCell.Tab.0.right" timestamp="1585291245633">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="153" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1585291245633" />
+    <state width="1431" height="234" key="GridCell.Tab.1.bottom" timestamp="1585191508657">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="234" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1585191508657" />
+    <state width="1431" height="234" key="GridCell.Tab.1.center" timestamp="1585191508657">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="234" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1585191508657" />
+    <state width="1431" height="234" key="GridCell.Tab.1.left" timestamp="1585191508657">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="234" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1585191508657" />
+    <state width="1431" height="234" key="GridCell.Tab.1.right" timestamp="1585191508657">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="234" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1585191508657" />
+    <state x="308" y="74" key="SettingsEditor" timestamp="1585103053220">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="308" y="74" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1585103053220" />
+    <state x="155" y="93" width="1288" height="678" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585290735831">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="155" y="93" width="1288" height="678" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1585290735831" />
+    <state x="490" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585370963910">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="490" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1585370963910" />
+    <state x="491" y="163" width="618" height="538" key="find.popup" timestamp="1585370990574">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="491" y="163" width="618" height="538" key="find.popup/62.0.1474.864@62.0.1474.864" timestamp="1585370990574" />
+  </component>
+</project>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>가계부 목록</title>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"/>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <h1>안녕! 가계부!</h1>
+
+    <div class="col-md-12">
+        <fieldset>
+            <legend>이번 달 지출 내역</legend>
+            <h3>총액 <u><tr th:each="account : ${accounts}"><td th:text="${#numbers.formatInteger(account.accumulated, 0, 'COMMA')}"></td></tr></u> 원</h3>
+            <!-- 수정--> <!-- 마지막 값만 나오게 -->
+        </fieldset>
+        <table class="table table-striped table-bordered">
+            <tr>
+                <th>날짜</th>
+                <th>항목</th>
+                <th>내용</th>
+                <th>수단</th>
+                <th>금액</th>
+                <th>누적 금액</th>
+                <th colspan="2">편집</th>
+            </tr>
+            <tr th:each="account : ${accounts}">
+                <td th:text="${#dates.format(account.date, 'MM/dd')}">3/24</td>
+                <td th:text="${account.category}">식비</td>
+                <td th:text="${account.content}">고기</td>
+                <td th:text="${account.method}">신한</td>
+                <td th:text="${#numbers.formatInteger(account.price, 0, 'COMMA')}">50,000</td>
+                <td th:text="${#numbers.formatInteger(account.accumulated, 0, 'COMMA')}">50,000</td>
+                <td>
+                    <form th:action="@{/accounts/edit}" method="get">
+                        <button type="submit" class="btn btn-default" name="form">편집</button>
+                        <!--<input calss="btn btn-default" type="submit" name="form" value="편집"/>-->
+                        <input type="hidden" name="id" th:value="${account.id}"/>
+                    </form>
+                </td>
+                <td>
+                    <form th:action="@{/accounts/delete}" method="post">
+                        <button type="submit" class="btn btn-danger" name="form">삭제</button>
+                        <!--<input calss="btn btn-danger" type="submit" value="삭제"/>-->
+                        <input type="hidden" name="id" th:value="${account.id}"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        th:src="@{/webjars/jquery/1.11.3/jquery.min.js}"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+        th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.min.js}"></script>
+</body>
+</html>

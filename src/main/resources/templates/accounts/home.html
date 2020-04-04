@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>가계부 홈</title>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"/>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <h1>Home _ 안녕! 가계부!</h1>
+
+    <form th:action="@{/accounts/enroll}">
+        <button type="submit" class="btn btn-warning" name="enroll">항목 등록하기</button>
+        <input type="hidden" name="enroll" />
+    </form>
+
+    <form th:action="@{/accounts/input}">
+        <button type="submit" class="btn btn-info" name="input">지출 입력하기</button>
+        <input type="hidden" name="input" />
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        th:src="@{/webjars/jquery/1.11.3/jquery.min.js}"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+        th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.min.js}"></script>
+</body>
+</html>

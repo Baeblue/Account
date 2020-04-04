@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>가계부 항목 등록</title>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"/>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <h1>안녕! 가계부!</h1>
+    <h2>항목과 수단을 등록하자.</h2>
+
+    <div class="col-md-12">
+        <form th:action="@{/accounts/enroll}" th:object="${accountForm}"
+              class="form-horizontal" method="post">
+            <fieldset>
+                <legend>지출 항목 등록</legend>
+                <div class="form-group" th:classappend=
+                        "${#fields.hasErrors('category')}? 'has-error has-feedback'">
+                    <!--<label for="category" class="col-md-2 control-label">입력 칸</label>-->
+
+                    <div class="col-md-10">
+                        <input type="text" id="category" name="category"
+                                th:field="*{category}"
+                                class="form-control" value="식비"/>
+                        <span th:if="${#fields.hasErrors('category')}"
+                              th:errors="*{category}"
+                              class="help-block">error!</span>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success">추가</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <table class="table table-borderless">
+            <tr>
+                <th>지출 항목</th>
+                <th>편집</th>
+            </tr>
+            <tr th:each="account : ${accounts}">
+                <td th:text="${account.category}">식비</td>     <!-- category 하나만 나오게 -->
+                <td>
+                    <form th:action="@{/accounts/delete}" method="post">
+                        <input class="btn btn-danger" type="submit" value="삭제"/>
+                        <input type="hidden" name="id" th:value="${account.category}"/>
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+
+        <form th:action="@{/accounts/enroll}" th:object="${accountForm}"
+              class="form-horizontal" method="post">
+            <fieldset>
+                <legend>지출 수단 등록</legend>
+                <div class="form-group" th:classappend=
+                        "${#fields.hasErrors('method')}? 'has-error has-feedback'">
+                    <!--<label for="category" class="col-md-2 control-label">입력 칸</label>-->
+
+                    <div class="col-md-10">
+                        <input type="text" id="method" name="method"
+                               th:field="*{method}"
+                               class="form-control" value="신한카드"/>
+                        <span th:if="${#fields.hasErrors('method')}"
+                              th:errors="*{method}"
+                              class="help-block">error!</span>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success">추가</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <table class="table table-borderless">
+            <tr>
+                <th>지출 수단</th>
+                <th>편집</th>
+            </tr>
+            <tr th:each="account : ${accounts}">
+                <td th:text="${account.method}">신한카드</td>       <!-- method 하나만 나오게 -->
+                <td>
+                    <form th:action="@{/accounts/delete}" method="post">
+                        <input class="btn btn-danger" type="submit" value="삭제"/>
+                        <input type="hidden" name="id" th:value="${account.method}"/>
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        th:src="@{/webjars/jquery/1.11.3/jquery.min.js}"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+        th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.min.js}"></script>
+</body>
+</html>
