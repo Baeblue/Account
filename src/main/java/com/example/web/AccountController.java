@@ -29,7 +29,8 @@ public class AccountController {
         return "accounts/home";
     }
 
-    @PostMapping(path = "enroll")   // 등록에서 데이터 넣는 것.
+    @PostMapping(path = "enroll")
+        // 등록에서 데이터 넣는 것.
     String enroll(@Validated AccountForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return list(model);
@@ -40,7 +41,8 @@ public class AccountController {
         return "redirect:/accounts/enroll";
     }
 
-    @GetMapping(path = "enroll")   // 등록화면으로 들어오는 것
+    @GetMapping(path = "enroll")
+        // 등록화면으로 들어오는 것
     String enroll(Model model) {
         List<Account> accounts = accountService.findAll();
         model.addAttribute("accounts", accounts);
@@ -48,7 +50,8 @@ public class AccountController {
     }
 
 
-    @PostMapping(path = "input")   // 입력에서 데이터 넣는 것.
+    @PostMapping(path = "input")
+        // 입력에서 데이터 넣는 것.
     String input(@Validated AccountForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return list(model);
@@ -59,7 +62,8 @@ public class AccountController {
         return "accounts/input";
     }
 
-    @GetMapping(path = "input")   // 입력화면으로 들어오는 것
+    @GetMapping(path = "input")
+        // 입력화면으로 들어오는 것
     String input(Model model) {
         List<Account> accounts = accountService.findAll();
         model.addAttribute("accounts", accounts);

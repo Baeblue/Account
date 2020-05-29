@@ -26,8 +26,8 @@
 
                     <div class="col-md-10">
                         <input type="text" id="category" name="category"
-                                th:field="*{category}"
-                                class="form-control" value="식비"/>
+                               th:field="*{category}"
+                               class="form-control" value="식비"/>
                         <span th:if="${#fields.hasErrors('category')}"
                               th:errors="*{category}"
                               class="help-block">error!</span>
