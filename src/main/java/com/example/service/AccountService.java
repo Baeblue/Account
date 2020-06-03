@@ -11,6 +11,7 @@ import java.util.List;
 @Service
 @Transactional
 public class AccountService {
+
     @Autowired
     AccountRepository accountRepository;
 
@@ -33,9 +34,4 @@ public class AccountService {
     public void delete(Integer id) {
         accountRepository.deleteById(id);
     }
-
-
-//    public void delete(Account account) {
-//        accountRepository.delete(account);
-//    }
 }

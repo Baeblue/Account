@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// This is AccountController
 @Controller
 @RequestMapping("accounts")
 public class AccountController {
+
     @Autowired
     AccountService accountService;
 
@@ -30,7 +30,7 @@ public class AccountController {
     }
 
     @PostMapping(path = "enroll")
-        // 등록에서 데이터 넣는 것.
+        // 등록에서 데이터 넣는 것
     String enroll(@Validated AccountForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return list(model);
@@ -51,7 +51,7 @@ public class AccountController {
 
 
     @PostMapping(path = "input")
-        // 입력에서 데이터 넣는 것.
+        // 입력에서 데이터 넣는 것
     String input(@Validated AccountForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return list(model);
@@ -76,12 +76,6 @@ public class AccountController {
         model.addAttribute("accounts", accounts);
         return "accounts/list";
     }
-
-//    @PostMapping(path = "delete")
-//    String delete(@RequestParam(value = "params", required = false) Account account) {
-//        accountService.delete(account);
-//        return "accounts/enroll";
-//    }
 
     @PostMapping(path = "delete")
     String delete(@RequestParam Integer id) {

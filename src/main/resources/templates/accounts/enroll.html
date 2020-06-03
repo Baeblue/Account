@@ -22,7 +22,6 @@
                 <legend>지출 항목 등록</legend>
                 <div class="form-group" th:classappend=
                         "${#fields.hasErrors('category')}? 'has-error has-feedback'">
-                    <!--<label for="category" class="col-md-2 control-label">입력 칸</label>-->
 
                     <div class="col-md-10">
                         <input type="text" id="category" name="category"
@@ -38,13 +37,14 @@
                 </div>
             </fieldset>
         </form>
+
         <table class="table table-borderless">
             <tr>
                 <th>지출 항목</th>
                 <th>편집</th>
             </tr>
             <tr th:each="account : ${accounts}">
-                <td th:text="${account.category}">식비</td>     <!-- category 하나만 나오게 -->
+                <td th:text="${account.category}">식비</td>     <!-- category 하나만 나오게 하기 -->
                 <td>
                     <form th:action="@{/accounts/delete}" method="post">
                         <input class="btn btn-danger" type="submit" value="삭제"/>
@@ -52,7 +52,6 @@
                     </form>
                 </td>
             </tr>
-
         </table>
 
         <form th:action="@{/accounts/enroll}" th:object="${accountForm}"
@@ -61,7 +60,6 @@
                 <legend>지출 수단 등록</legend>
                 <div class="form-group" th:classappend=
                         "${#fields.hasErrors('method')}? 'has-error has-feedback'">
-                    <!--<label for="category" class="col-md-2 control-label">입력 칸</label>-->
 
                     <div class="col-md-10">
                         <input type="text" id="method" name="method"
@@ -77,13 +75,14 @@
                 </div>
             </fieldset>
         </form>
+
         <table class="table table-borderless">
             <tr>
                 <th>지출 수단</th>
                 <th>편집</th>
             </tr>
             <tr th:each="account : ${accounts}">
-                <td th:text="${account.method}">신한카드</td>       <!-- method 하나만 나오게 -->
+                <td th:text="${account.method}">신한카드</td>       <!-- method 하나만 나오게 하기 -->
                 <td>
                     <form th:action="@{/accounts/delete}" method="post">
                         <input class="btn btn-danger" type="submit" value="삭제"/>
@@ -91,7 +90,6 @@
                     </form>
                 </td>
             </tr>
-
         </table>
     </div>
 </div>

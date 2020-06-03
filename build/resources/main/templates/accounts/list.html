@@ -23,7 +23,7 @@
                 </tr>
             </u> 원
             </h3>
-            <!-- 수정--> <!-- 마지막 값만 나오게 -->
+            <!-- 수정 _ 최종 값만 나오게 -->
         </fieldset>
         <table class="table table-striped table-bordered">
             <tr>
@@ -45,21 +45,17 @@
                 <td>
                     <form th:action="@{/accounts/edit}" method="get">
                         <button type="submit" class="btn btn-default" name="form">편집</button>
-                        <!--<input calss="btn btn-default" type="submit" name="form" value="편집"/>-->
                         <input type="hidden" name="id" th:value="${account.id}"/>
                     </form>
                 </td>
                 <td>
                     <form th:action="@{/accounts/delete}" method="post">
                         <button type="submit" class="btn btn-danger" name="form">삭제</button>
-                        <!--<input calss="btn btn-danger" type="submit" value="삭제"/>-->
                         <input type="hidden" name="id" th:value="${account.id}"/>
                     </form>
                 </td>
             </tr>
         </table>
-
-
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
